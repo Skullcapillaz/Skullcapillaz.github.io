@@ -7,7 +7,9 @@ var overlayImages = [
   "hoodie gray-01.png",
   "hoodie green-01.png",
   "camo jacket-01.png",
-  "pistol.png",
+  "helmet.png",
+  "miner.png",
+  "flower.png",
 ];
 
 var overlays = []; // Keep track of current overlays
