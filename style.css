@@ -1,19 +1,14 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   /* CSS rules for screens smaller than 600px */
   body {
     font-size: 16px;
   }
   #logo img {
-    width: 50%%;
+    width: 10%%;
   }
   #nft {
-    margin-right: 55px;
-    justify-items: auto;
     margin-top: 3rem;
-    max-width: 33%;
-    max-height: 33%;
-    height: 30%;
-    position: absolute;
+    right: 100px;
   }
   /* ... other rules */
 }
