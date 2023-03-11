@@ -72,7 +72,7 @@ button.active {
   margin-top: 3rem;
   max-width: 50%;
   height: 50%;
-  position: absolute;
+  position: relative;
 }
 
 #nft img {
