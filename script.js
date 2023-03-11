@@ -79,6 +79,11 @@ function overlayImage(container, imageUrl) {
   overlay.src = imageUrl;
 }
 
+const introElement = document.getElementById('intro');
+introElement.addEventListener('animationend', () => {
+  introElement.parentNode.removeChild(introElement);
+});
+
 function clearOverlays() {
   var nftContainer = document.getElementById("nft");
 
