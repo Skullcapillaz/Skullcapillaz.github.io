@@ -1,3 +1,14 @@
+@media screen and (max-width: 600px) {
+  /* CSS rules for screens smaller than 600px */
+  body {
+    font-size: 16px;
+  }
+  #logo img {
+    width: 100%;
+  }
+  /* ... other rules */
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
