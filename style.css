@@ -6,6 +6,13 @@
   #logo img {
     width: 100%;
   }
+  #nft {
+    margin-left: 200px;
+    margin-top: 3rem;
+    max-width: 50%;
+    height: 50%;
+    position: relative;
+  }
   /* ... other rules */
 }
 
