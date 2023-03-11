@@ -7,8 +7,7 @@
     width: 100%;
   }
   #nft {
-    display: flex;
-    align-items: center;
+    margin-right: 55px;
     justify-items: auto;
     margin-top: 3rem;
     max-width: 33%;
