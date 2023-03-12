@@ -10,6 +10,7 @@ var overlayImages = [
   "helmet.png",
   "miner.png",
   "flower.png",
+  "horns.png",
 ];
 
 var overlays = []; // Keep track of current overlays
