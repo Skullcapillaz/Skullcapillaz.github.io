@@ -1,6 +1,6 @@
 // Define array of overlay image URLs
 var overlayImages = [
-  "tattoo.png",
+  "Tattoo.png",
   "jacket.png",
   "gm.png.png",
   "face tatto-01.png",
