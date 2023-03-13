@@ -11,6 +11,7 @@ var overlayImages = [
   "miner.png",
   "flower.png",
   "horns.png",
+  "clown.png",
 ];
 
 var overlays = []; // Keep track of current overlays
@@ -129,3 +130,4 @@ var downloadButton = document.getElementById("download-button");
 downloadButton.addEventListener("click", function() {
   downloadImage();
 });
+
