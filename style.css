@@ -122,7 +122,8 @@ button.active {
 
 #nft {
   margin-left: 200px;
-  margin-top: 3rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.5rem;
   max-width: 50%;
   height: 50%;
   position: relative;
