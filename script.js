@@ -142,12 +142,6 @@ function downloadImage() {
     link.download = "my-image.png";
     link.click();
   });
-
-  // Generate a data URL for the canvas and create a download link
-  var link = document.createElement("a");
-  link.download = "illazcustom.png";
-  link.href = canvas.toDataURL();
-  link.click();
 }
 
 var downloadButton = document.getElementById("download-button");
