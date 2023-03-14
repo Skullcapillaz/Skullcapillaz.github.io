@@ -16,7 +16,7 @@
       <div> 
       <p>Enter your illaz token ID below:</p>
       <input type="text" id="tokenID"><br>
-      <button onclick="getNFT()">Get NFT</button>
+      <button class="getnft" onclick="getNFT()">Get NFT</button>
       </div>
       <br>
       <div id="nft">
@@ -35,6 +35,9 @@
         <button class="overlay-button" data-image-url="horns.png">Horns</button>
         <button class="overlay-button" data-image-url="clown.png">Clown</button>
         <button class="overlay-button" onclick="clearOverlays()">Clear Overlays</button>
+      </div>
+      <div>
+        <button class="download-button" onclick="downloadImage()">Download</button>
       </div>
       <div id="loading">
         <img src="loading.png">

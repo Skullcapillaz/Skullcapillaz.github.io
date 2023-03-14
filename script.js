@@ -117,17 +117,37 @@ clearButton.addEventListener("click", function() {
   clearOverlays();
 });
 
+
 function downloadImage() {
   var nftContainer = document.getElementById("nft");
   var image = nftContainer.querySelector("img");
-  var link = document.createElement('a');
-  link.download = 'my-nft.png';
-  link.href = image.src;
+
+  // Create a new canvas element with the same dimensions as the image
+  var canvas = document.createElement("canvas");
+  canvas.width = image.naturalWidth;
+  canvas.height = image.naturalHeight;
+
+  // Get the canvas context and draw the original image onto it
+  var ctx = canvas.getContext("2d");
+  ctx.drawImage(image, 0, 0);
+
+  // Draw all overlay images onto the canvas
+  var overlayImages = nftContainer.querySelectorAll(".overlay");
+  for (var i = 0; i < overlayImages.length; i++) {
+    ctx.drawImage(overlayImages[i], 0, 0);
+  }
+
+  // Convert the canvas to a data URL and initiate a download
+  var link = document.createElement("a");
+  link.download = "illazcustom.png";
+  link.href = canvas.toDataURL();
   link.click();
 }
 
 var downloadButton = document.getElementById("download-button");
-downloadButton.addEventListener("click", function() {
+downloadButton.onclick = function(downloadImage) {
   downloadImage();
-});
+};
+
+
 
