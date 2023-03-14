@@ -139,9 +139,9 @@ function downloadImage() {
   canvas.toBlob(function(blob) {
     var link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
-    link.download = "my-image.png";
+    link.download = "illazcustom.png";
     link.click();
-  });
+  }
 
   // Generate a data URL for the canvas and create a download link
   var link = document.createElement("a");
