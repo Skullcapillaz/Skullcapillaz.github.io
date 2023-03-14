@@ -8,7 +8,6 @@ var overlayImages = [
   "hoodie green-01.png",
   "camo jacket-01.png",
   "helmet.png",
-  "miner.png",
   "flower.png",
   "horns.png",
   "clown.png",
