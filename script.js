@@ -117,27 +117,33 @@ clearButton.addEventListener("click", function() {
   clearOverlays();
 });
 
-
 function downloadImage() {
   var nftContainer = document.getElementById("nft");
   var image = nftContainer.querySelector("img");
 
-  // Create a new canvas element with the same dimensions as the image
+  // Create a new canvas element
   var canvas = document.createElement("canvas");
-  canvas.width = image.naturalWidth;
-  canvas.height = image.naturalHeight;
+  canvas.width = image.width;
+  canvas.height = image.height;
 
-  // Get the canvas context and draw the original image onto it
-  var ctx = canvas.getContext("2d");
-  ctx.drawImage(image, 0, 0);
+  // Draw the base image on the canvas
+  var context = canvas.getContext("2d");
+  context.drawImage(image, 0, 0);
 
-  // Draw all overlay images onto the canvas
+  // Draw all overlay images on the canvas
   var overlayImages = nftContainer.querySelectorAll(".overlay");
   for (var i = 0; i < overlayImages.length; i++) {
-    ctx.drawImage(overlayImages[i], 0, 0);
+    context.drawImage(overlayImages[i], 0, 0, image.width, image.height);
   }
 
-  // Convert the canvas to a data URL and initiate a download
+  canvas.toBlob(function(blob) {
+    var link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "my-image.png";
+    link.click();
+  });
+
+  // Generate a data URL for the canvas and create a download link
   var link = document.createElement("a");
   link.download = "illazcustom.png";
   link.href = canvas.toDataURL();
